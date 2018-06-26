@@ -53,7 +53,7 @@ public class Exercicio1 {
         jTextFieldNome.setLocation(10,40);
         jLabelSobrenome.setLocation(230,10);
         jTextFieldSobrenome.setLocation(230,40);
-        jButtonConcatenar.setLocation(10,300);
+        jButtonConcatenar.setLocation(10,200);
         jLabelResultado.setLocation(10,350);
         
     }
@@ -86,7 +86,7 @@ public class Exercicio1 {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                jLabelResultado.setText(jTextFieldNome.getText()+ " " + jTextFieldSobrenome.getText());
+                jLabelResultado.setText("E ai," + " " + jTextFieldNome.getText()+ " " + jTextFieldSobrenome.getText());
             }
         });
     }    
