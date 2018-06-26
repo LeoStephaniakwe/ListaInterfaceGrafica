@@ -1,4 +1,13 @@
 
+import Exercicio1.Exercicio1;
+import Exercicio2.Exercicio2;
+import Exercicio3.Exercicio3;
+import Exercicio4.Exercicio4;
+import Exercicio5.Exercicio5;
+import Exercicio6.Exercicio6;
+import Exercicio7.Exercicio7;
+import Exercicio8.Exercicio8;
+import Exercicio9.Exercicio9;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -7,9 +16,8 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 /**
  *
- * @author Alunos
+ * @author Leonardo
  */
-
 public class classePrincipal {
 
     private JFrame jFrame;
@@ -22,12 +30,8 @@ public class classePrincipal {
     private JButton jButton06;
     private JButton jButton07;
     private JButton jButton08;
-    private JButton jButton09;
-    private JButton jButton10;
-    private JButton jButtonOutros01;
-    private JButton jButtonOutros02;
 
-    public ExemploTudo() {
+    public classePrincipal() {
         gerarTela();
         instanciarComponentes();
         gerarDimensoes();
@@ -42,14 +46,9 @@ public class classePrincipal {
         acaoJButton06();
         acaoJButton07();
         acaoJButton08();
-        acaoJButton09();
-        acaoJButton10();
-        acaoJButtonOutros01();
-        acaoJButtonOutros02();
         jFrame.setVisible(true);
     }
 
-    @Override
     public void gerarTela() {
         jFrame = new JFrame();
         jFrame.setSize(500, 500);
@@ -58,7 +57,6 @@ public class classePrincipal {
         jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
-    @Override
     public void adicionarComponentes() {
         jFrame.add(jButton00);
         jFrame.add(jButton01);
@@ -69,30 +67,22 @@ public class classePrincipal {
         jFrame.add(jButton06);
         jFrame.add(jButton07);
         jFrame.add(jButton08);
-        jFrame.add(jButton09);
-        jFrame.add(jButton10);
-        jFrame.add(jButtonOutros01);
-        jFrame.add(jButtonOutros02);
+
     }
 
-    @Override
     public void instanciarComponentes() {
-        jButton00 = new JButton("Exemplo 00");
-        jButton01 = new JButton("Exemplo 01");
-        jButton02 = new JButton("Exemplo 02");
-        jButton03 = new JButton("Exemplo 03");
-        jButton04 = new JButton("Exemplo 04");
-        jButton05 = new JButton("Exemplo 05");
-        jButton06 = new JButton("Exemplo 06");
-        jButton07 = new JButton("Exemplo 07");
-        jButton08 = new JButton("Exemplo 08");
-        jButton09 = new JButton("Exemplo 09");
-        jButton10 = new JButton("Exemplo 10");
-        jButtonOutros01 = new JButton("Outros 01");
-        jButtonOutros02 = new JButton("Outros 02");
+        jButton00 = new JButton("Exercicio 1");
+        jButton01 = new JButton("Exercicio 2");
+        jButton02 = new JButton("Exercicio 3");
+        jButton03 = new JButton("Exercicio 4");
+        jButton04 = new JButton("Exercicio 5");
+        jButton05 = new JButton("Exercicio 6");
+        jButton06 = new JButton("Exercicio 7");
+        jButton07 = new JButton("Exercicio 8");
+        jButton08 = new JButton("Exercicio 9");
+
     }
 
-    @Override
     public void gerarLocalizacoes() {
         jButton00.setLocation(10, 10);
         jButton01.setLocation(120, 10);
@@ -103,34 +93,27 @@ public class classePrincipal {
         jButton06.setLocation(230, 120);
         jButton07.setLocation(340, 120);
         jButton08.setLocation(10, 230);
-        jButton09.setLocation(120, 230);
-        jButton10.setLocation(230, 230);
-        jButtonOutros01.setLocation(10, 340);
-        jButtonOutros02.setLocation(120, 340);
+        
     }
 
-    @Override
     public void gerarDimensoes() {
-        jButton00.setSize(100, 100);
-        jButton01.setSize(100, 100);
-        jButton02.setSize(100, 100);
-        jButton03.setSize(100, 100);
-        jButton04.setSize(100, 100);
-        jButton05.setSize(100, 100);
-        jButton06.setSize(100, 100);
-        jButton07.setSize(100, 100);
-        jButton08.setSize(100, 100);
-        jButton09.setSize(100, 100);
-        jButton10.setSize(100, 100);
-        jButtonOutros01.setSize(100, 100);
-        jButtonOutros02.setSize(100, 100);
+        jButton00.setSize(110, 100);
+        jButton01.setSize(110, 100);
+        jButton02.setSize(110, 100);
+        jButton03.setSize(110, 100);
+        jButton04.setSize(110, 100);
+        jButton05.setSize(110, 100);
+        jButton06.setSize(110, 100);
+        jButton07.setSize(110, 100);
+        jButton08.setSize(110, 100);
+        
+
     }
 
     public void acaoJButton00() {
         jButton00.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
-                new ExemploJRadioButton01();
+                new Exercicio1();
             }
         });
     }
@@ -139,7 +122,7 @@ public class classePrincipal {
         jButton01.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ExemploJButton01();
+                new Exercicio2();
             }
         });
     }
@@ -148,7 +131,7 @@ public class classePrincipal {
         jButton02.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ExemploJLabel01();
+                new Exercicio3();
             }
         });
     }
@@ -157,7 +140,7 @@ public class classePrincipal {
         jButton03.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ExemploJTextField01();
+                new Exercicio4();
             }
         });
     }
@@ -166,7 +149,7 @@ public class classePrincipal {
         jButton04.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ExemploJButton02();
+                new Exercicio5();
             }
         });
     }
@@ -175,7 +158,7 @@ public class classePrincipal {
         jButton05.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ExemploJComboBox01();
+                new Exercicio6();
             }
         });
     }
@@ -184,7 +167,7 @@ public class classePrincipal {
         jButton06.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ExemploJTextArea01();
+                new Exercicio7();
             }
         });
     }
@@ -193,7 +176,7 @@ public class classePrincipal {
         jButton07.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ExemploJRadioButton01();
+                new Exercicio8();
             }
         });
     }
@@ -202,42 +185,9 @@ public class classePrincipal {
         jButton08.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ExemploJCheckBox01();
+                new Exercicio9();
             }
         });
     }
 
-    public void acaoJButton09() {
-        jButton09.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new ExemploJTable01();
-            }
-        });
-    }
-
-    public void acaoJButton10() {
-        jButton10.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new ExemploHospitalJFrame();
-            }
-        });
-    }
-
-    public void acaoJButtonOutros01() {
-        jButtonOutros01.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new ExemploOutros1();
-            }
-        });
-    }
-    public void acaoJButtonOutros02() {
-        jButtonOutros02.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new ExemploOutros2();
-            }
-        });
-    }
+}
