@@ -65,9 +65,6 @@ public class Exercicio1 {
         jFrame.add(jTextFieldSobrenome);
         jFrame.add(jButtonConcatenar);
         jFrame.add(jLabelResultado);
-        
-
-       
     }
 
     private void instanciarComponentes() {
@@ -78,7 +75,6 @@ public class Exercicio1 {
         jLabelSobrenome = new JLabel("Sobrenome");
         jButtonConcatenar = new JButton("Concatenar");
         jLabelResultado = new JLabel("");
-        
     }
 
     private void adicionarAcoes() {
